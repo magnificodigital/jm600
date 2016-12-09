@@ -1,0 +1,63 @@
+		@charset "utf-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+
+ol, ul {
+	list-style: none;
+}
+
+
+
+/* ------------------------------------------------------------------------
+	This you can customize
+------------------------------------------------------------------------- */
+
+	label.checkbox span.holder {
+		height: 50px; /* Total height of your checkbox image */
+		background:url(_imgs/checkboxes.png) 0 0px no-repeat; /* Path to your checkbox image */
+
+	}
+	
+	label.checked span.holder,
+	label.checked span.holder,
+	label.checked:hover span.holder,
+	label.checked:hover span.holder { top: -23px !important;	} /* Background position when checked */
+
+
+/* ------------------------------------------------------------------------
+	Customize at your own risk
+------------------------------------------------------------------------- */
+
+
+		input.hiddenCheckbox {
+			position: absolute; left: -10000px; /* Hide the input */
+		}
+	
+		label.prettyCheckbox span.holderWrap {
+			display: block; float: left;
+			position: relative;
+			margin-right: 5px;
+			overflow: hidden;
+		}
+		
+		label.prettyCheckbox span.holder {
+			display: block;
+			position: absolute;
+			top: 0; left: 0;
+		}
